@@ -1,13 +1,126 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+.nav {
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f55a5a;
+  color: #fff;
+}
+
+.nav--logo {
+  padding-inline-end: 7px;
+  font-size: 24px;
+}
+
+.nav--title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.075em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  height: 168px;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+
+.card--fig {
+  margin: 0;
+  width: 125px;
+  overflow: hidden;
+}
+
+.card--img {
+  width: 125px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card--info {
+  width: 400px;
+  padding: 19px;
+}
+
+.card--location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.card--location-dot {
+  font-size: 10px;
+  color: #f55a5a;
+}
+
+.card--country {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.17em;
+}
+
+.card--map-link {
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 12px;
+  /* identical to box height */
+
+  text-decoration-line: underline;
+  color: #918e9b;
+}
+
+.card--title {
+  padding-top: 4px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.card--date {
+  padding-top: 16px;
+  font-weight: 700;
+  font-size: 10.24px;
+  line-height: 12px;
+}
+
+.card-desc {
+  padding-top: 9px;
+  font-size: 11px;
 }
